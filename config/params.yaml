@@ -1,0 +1,19 @@
+detector:
+  backend: auto           # auto|yolo|fake
+  model_path: models/best.pt
+  conf_thres: 0.25
+  iou_thres: 0.45
+
+camera:
+  fov_deg: 60.0           # horizontal FOV for pixel->angle
+
+controller:
+  kp_ang: 1.2
+  ki_ang: 0.0
+  kd_ang: 0.05
+  kp_lin: 0.8
+  ki_lin: 0.0
+  kd_lin: 0.02
+  max_lin: 0.4
+  max_ang: 1.5
+  target_stop_range: 0.6  # [m] stop if closer than this
